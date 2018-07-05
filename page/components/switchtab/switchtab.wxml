@@ -1,0 +1,18 @@
+<view class='wx-switch-outer'>
+    <scroll-view scroll-x="true" class="linktab-header" scroll-left="{{iScrollLeft}}">
+         <block wx:for="{{aHeadData}}" wx:for-item="oItem" wx:key="id" wx:for-index="index">
+           <view class="tab-item {{iCurrentTab==index?'active':''}}"  data-current="{{index}}" bindtap="fSwitchTab">{{oItem.name}}</view>
+         </block>
+    </scroll-view>
+    <swiper class="tab-ct" current="{{iCurrentTab}}" duration="300" bindchange="fSwitchContent"
+     style="height:{{winHeight}}rpx">
+        <swiper-item wx:for="{{aHeadData}}" wx:key="id" wx:for-item="oItem" wx:for-index="index">
+            <scroll-view scroll-y="true" class="scoll-h" >
+                <block wx:for="{{[1,2,3,4,5,6,7,8,9,10,11,12,13,14,15]}}" wx:for-item="oiItem" wx:key="*this" wx:for-index="iindex">
+                       <view class='item-btn'>{{oItem.name+"-"+index+"-"+iindex}}</view> 
+                </block>
+            </scroll-view>
+        </swiper-item>
+    </swiper>
+</view>
+

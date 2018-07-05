@@ -1,0 +1,116 @@
+
+<!-- <import src="/page/common/template/cmtemplate.wxml" /> -->
+<!--==================任务模块 start===================-->
+<!--=用temType 来区分哪个tab模块 demo===================-->
+<!--==  oModuleList: {
+      temType: "1", temStyle: "", temImgStyle: "", temTxtStyle: "", 
+	  aTaskModule:[{permission: "potential_customers",url: '../index/home',imgsrc: '../../public/images/ind-cus-manage.png',text: '潜客管理',test:"潜客"},
+      {permission: "search",url: '../index/home?type=search',imgsrc: '../../public/images/ind-search.png',img: '../../public/images/ind-search.png',text: '搜索潜客'}]}==-->
+        <!-- <template is="taskmodule" data="{{...oModuleList}}"/> -->
+  <!--=demo= end==================-->
+<template name="taskmodule">
+      <view class='tpt-task-box' style='{{boxStyle}}'>
+          <block wx:for='{{aTaskModule}}'  wx:for-item='oItem' wx:key='oItem.id' wx:for-index="index">
+            <view class="tpt-task-item" style='{{temStyle}}' data-temtype='{{temType}}'  data-oitem='{{oItem}}' bindtap='fTaskModule'>
+                <image class='tpt-task-img' style='{{temImgStyle}}' src='{{oItem.imgsrc}}'></image>
+                <view class="" style="{{temTxtStyle}}">{{oItem[test]||oItem.text}}</view>
+            </view>
+          </block>
+      </view>
+</template>
+<!--==================任务模块 end===================-->
+
+
+<!--==================底部导航 start===================-->
+<!--=={
+      boxStyle:"",temType: "1", temStyle: "", temImgStyle: "", temTxtStyle: "",
+      aFooter:[{ url: "/page/client/pages/sharecase/sharecase", icon: "/public/images/share-gift.png", name: "案例列表" },
+      { url: "/page/customer/pages/case/case", aData: ["11", "22"], icon: "/public/images/share-fre.png", name: "操作列表" }]}==-->
+         <!-- <template is="navfooter" data="{{...oFooter}}"/> -->
+         <!-- ======demo end======= -->
+<template name="navfooter">
+  <view class='tpt-footer-ct'  style='{{boxStyle}}'>
+    <block wx:for="{{aFooter}}" wx:for-item="oItem" wx:key="oItem.id"  wx:for-index="index">
+      <view class="tpt-footer-item" style='{{temStyle}}' data-oitem="{{oItem}}" bindtap='fTapFooter'>
+          <view  class='tpt-footer-item-nav'>
+            <image class='tpt-footer-img' style="{{temImgStyle}}" src="{{oItem.icon}}" ></image>
+            <view class='tpt-footer-name' style='{{temTxtStyle}}'>{{oItem.name}}</view>
+          </view>
+      </view>
+    </block>
+  </view>
+</template>
+<!--================== 底部导航end===================-->
+
+
+<!--==================搜索窗口 start===================-->
+<!--=用temType 来区分哪个tab模块===================-->
+<!--=== oArrModule:{licon: "https://nihaomc.com/wxa/feimg/wait-1.png", ricon: "/public/images/nav-right-icon.png",lText:"案例素材审核",rText:"2"}===-->
+    <!-- <template is="searchInput" data="{{...oListModule}}"></template> -->
+    <!-- ==========demo end================ -->
+
+<template name="searchInput">
+  <view class='tpt-search-ct tpt-b-s'  style='{{boxStyle}}'>
+      <icon type='search ' size="18" class='tpt-b-s tpt-search-i-b tpt-s-icon' style='{{iconStyle}}'></icon>
+      <input placeholder='搜"双眼皮"或"医院名称"试试' value="{{searchValue}}" data-temtype="{{temType}}" bindinput='fTptSearch' class='tpt-b-s tpt-search-i-b tpt-search-input' style='{{inputStyle}}'></input>
+  </view>
+</template>
+
+<!--==================搜索窗口 end===================-->
+
+
+<!--==================列表模块 start===================-->
+<!--=用temType 来区分哪个列表模块===================-->
+<!--== oListModule:{
+      temType: "1", boxStyle: "", boxItemStyle: "", temLeftTxtStyle: "", temLeftImgStyle: "", temRightTxtStyle:"", temRightImgStyle: "",
+      aListModule: [
+        { name: "二次营销人群", des: "3", icon: "https://nihaomc.com/wxa/feimg/wait-1.png", ricon: "/public/images/nav-right-icon.png" }, 
+        { name: "分诊通知", des: "2", icon: "https://nihaomc.com/wxa/feimg/wait-2.png", ricon: "/public/images/nav-right-icon.png" }, 
+        { name: "客户咨询会话", des: "1", icon: "https://nihaomc.com/wxa/feimg/wait-5.png", ricon: "/public/images/nav-right-icon.png" }]}==-->
+         <!-- <template is="listmodule" data="{{...oListModule}}"></template> -->
+         <!-- =================demo end=================== -->
+<template name="listmodule">
+      <view class='tpt-list-box' style='{{boxStyle}}'>
+          <block wx:for='{{aListModule}}'  wx:for-item='oItem' wx:key='oItem.id' wx:for-index="index">
+           <view class='tpt-list-item-box' style='{{boxItemStyle}}'>
+                <view class='tpt-list-item' style='{{temLeftTxtStyle}}'>
+                  <image class='tpt-list-img' style='{{temLeftImgStyle}}' src='{{oItem.icon}}'></image>
+                    {{oItem.name}} 
+                </view>
+                <view class='tpt-list-item tpt-list-right-txt' style='{{temRightTxtStyle}}'>
+                   {{oItem.des}}
+                   <image class='tpt-list-img' style='{{temRightImgStyle}}' src='{{oItem.ricon}}'></image>
+                </view>
+            </view>
+          </block>
+      </view>
+</template>
+<!--==================列表模块 end===================-->
+
+<!--==================单个箭头模块 start===================-->
+<!--=用temType 来区分哪个列表模块===================-->
+<!--=={temType: "1", boxStyle: "", boxItemStyle: "", temLeftTxtStyle: "", temLeftImgStyle: "", temRightTxtStyle:"", temRightImgStyle: "",licon: "/public/images/share-gift.png", ricon: "/public/images/nav-right-icon.png"}==-->
+  <!-- <template is="arrmodule" data="{{...oArrModule}}"></template> -->
+<!--==========demo end===========-->
+<template name="arrmodule">
+      <view class='tpt-arr-box' style='{{boxStyle}}' data-temtype='{{temType}}' bindtap='fSingleArr'>
+                <view class='tpt-arr-item' style='{{temLeftTxtStyle}}'>
+                  <image class='tpt-arr-img' style='{{temLeftImgStyle}}' src='{{licon}}'></image>
+                    {{lText}} 
+                </view>
+                <view class='tpt-arr-item tpt-arr-right-txt' style='{{temRightTxtStyle}}'>
+                   {{rText}}
+                   <image class='tpt-arr-img' style='{{temRightImgStyle}}' src='{{ricon}}'></image>
+                </view>
+      </view>
+</template>
+<!--==================单个箭头模块 end===================-->
+
+
+
+
+
+
+
+
+

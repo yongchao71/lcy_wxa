@@ -1,0 +1,32 @@
+<view >
+    <scroll-view scroll-x="true" class="linktab-header" scroll-left="{{scrollLeft}}">
+        <view class="tab-item {{currentTab==0?'active':''}}"  data-current="0" bindtap="swichNav">眼部整形</view>
+        <view class="tab-item {{currentTab==1?'active':''}}" data-current="1" bindtap="swichNav">鼻部整形</view>
+        <view class="tab-item {{currentTab==2?'active':''}}" data-current="2" bindtap="swichNav">美体塑形</view>
+        <view class="tab-item {{currentTab==3?'active':''}}" data-current="3" bindtap="swichNav">肉毒素</view>
+        <view class="tab-item {{currentTab==4?'active':''}}" data-current="4" bindtap="swichNav">半永久</view>
+        <view class="tab-item {{currentTab==5?'active':''}}" data-current="5" bindtap="swichNav">牙齿美容</view>
+        <view class="tab-item {{currentTab==6?'active':''}}" data-current="6" bindtap="swichNav">抗衰老初老</view>
+        <view class="tab-item {{currentTab==7?'active':''}}" data-current="7" bindtap="swichNav">其他</view>
+    </scroll-view>
+    <swiper class="tab-content" current="{{currentTab}}" duration="300" bindchange="switchTab"
+     style="height:{{winHeight}}rpx">
+        <swiper-item wx:for="{{[0,1,2,3,4,5,6,7]}}" wx:key="id" wx:for-item="oItem" wx:for-index="index">
+            <scroll-view scroll-y="true" class="scoll-h" >
+                <block wx:for="{{[1,2,3,4,5,6,7,8,9,10,11,12,13,14,15,16]}}" wx:for-item="oiItem" wx:key="*this" wx:for-index="iindex" wx:if="{{iindex>index}}">
+                    <view class="item-ans">
+                        <view class="avatar">
+                            <image class="img" src="/public/images/red-package.png"></image>
+                        </view>
+                        <view class="expertInfo">
+                            <view class="name">欢颜小助手{{oItem}}</view>
+                            <view class="tag">咨询师助手{{index}}</view>
+                            <view class="answerHistory">134个案例，2234人分享 </view>
+                        </view>
+                        <navigator url="/pages/askExpert/expertDetail" class="askBtn">分享</navigator> 
+                    </view>
+                </block>
+            </scroll-view>
+        </swiper-item>
+    </swiper>
+</view>

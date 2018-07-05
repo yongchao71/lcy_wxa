@@ -1,0 +1,142 @@
+
+
+/****************任务模块 start**************/
+.tpt-task-box{
+  background-color:#fff;
+  box-sizing: border-box;
+  padding: 40rpx;
+
+}
+.tpt-task-box .tpt-task-item{
+  display: inline-block;
+  box-sizing: border-box;
+  width: 25%;
+  text-align: center;
+  padding: 20rpx;
+}
+.tpt-task-box .tpt-task-img{
+  width: 60rpx;
+  height: 60rpx;
+}
+/****************任务模块 end**************/
+
+
+
+
+
+/***************底部导航 start*******************/
+.tpt-footer-ct{
+  width: 100%;
+  padding: 0rpx; 
+  position: fixed;
+  bottom: 0;
+  left: 0;
+  border-top: 1rpx solid #eeeeee;
+  background-color: #f7f7f7;
+  box-sizing: border-box;
+  display: flex;
+  justify-content: space-around;
+}
+.tpt-footer-ct .tpt-footer-item{
+  box-sizing: border-box;
+  text-align: center;
+}
+.tpt-footer-ct .tpt-footer-img{
+  width: 55rpx;
+  height: 55rpx;
+}
+.tpt-footer-ct .tpt-footer-name{
+  font-size: 24rpx;
+  color: #999999;
+}
+.tpt-footer-item-nav{
+  width:100%;
+  height:100%;
+  box-sizing: border-box;
+  padding:10rpx 20rpx;
+}
+/***************底部导航end*******************/
+
+/***************搜索框end*******************/
+.tpt-b-s{
+ box-sizing: border-box;
+}
+.tpt-search-i-b{
+  display: inline-block;
+  vertical-align: middle;
+}
+.tpt-search-ct{
+  width: 80%;
+  margin: 0 auto;
+  border:1rpx solid #eeeeee;
+  border-radius: 10rpx;
+}
+.tpt-search-ct .tpt-s-icon{
+  text-align: center;
+  padding: 24rpx;
+}
+.tpt-search-ct .tpt-search-input{
+  width: 85%;
+  height: 80rpx;
+}
+/***************搜索框end*******************/
+
+/***************带箭头 列表 start*******************/
+.tpt-list-box{
+  font-size: 28rpx;
+  color: #666666;
+  width: 100%;
+  box-sizing: border-box;
+  border-top: 1rpx solid #eeeeee;
+}
+.tpt-list-box .tpt-list-item-box{
+  border-bottom: 1rpx solid #eeeeee;
+  box-sizing: border-box;
+  display: flex;
+  justify-content: space-between;
+  padding: 20rpx 20rpx 20rpx 30rpx;
+}
+.tpt-list-box .tpt-list-item{
+   display: flex;
+   align-items: center;
+  box-sizing: border-box;
+}
+.tpt-list-box .tpt-list-right-txt{
+  font-size: 24rpx;
+  color: #999999;
+}
+.tpt-list-img{
+  width: 50rpx;
+  height: 50rpx;
+  margin-right: 10rpx;
+}
+
+/***************带箭头 列表 end*******************/
+
+/***************单个箭头 start*******************/
+
+.tpt-arr-box{
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+  box-sizing: border-box;
+  padding: 10rpx 20rpx;
+}
+.tpt-arr-box .tpt-arr-item{
+    box-sizing: border-box;
+    display: flex;
+   align-items: center;
+}
+.tpt-arr-box .tpt-arr-right-txt{
+  font-size: 24rpx;
+  color: #999999;
+}
+.tpt-arr-box .tpt-arr-img{
+ width: 50rpx;
+ height: 50rpx;
+  vertical-align: middle;
+  margin-right: 10rpx;
+}
+
+/***************单个箭头 end*******************/
+

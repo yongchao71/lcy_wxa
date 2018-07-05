@@ -1,0 +1,30 @@
+<!--===================commet START====================-->
+   <!-- <template is="commentmodule" data="{{projectItems,oProductCollection}}"></template> -->
+<!-- ============demo end============= -->
+<template name="commentmodule">
+ <view class='tpt-comment-out-ct'>
+   <view class='tpt-comment-mg-b tpt-comment-ct'>
+      <view class='tpt-comment-des'>现在术后两个月了，感觉恢复的比较快，客户是敏感性皮肤，但是丝毫没有任何影响，不影响外出，还需要注意饮食习惯。</view>
+   </view>
+   <view class='tpt-comment-mg-b tpt-comment-img-ct'>
+      <block  wx:for="{{['111','333','666','333']}}" wx:for-item="oItem" wx:for-index="{{index}}" wx:key="id">
+         <view class='tpt-comment-img-item'>
+               <image class='tpt-comment-img' mode="aspectFill" src='/public/images/img-demo.png'></image>   
+          </view>
+       </block>
+   </view>
+    <view class='tpt-comment-mg-b tpt-date-ct' >
+       <block  wx:for="{{['111','333','666','333','666']}}" wx:for-item="oItem" wx:for-index="{{index}}" wx:key="id">
+         <image class='tpt-rating-img' mode="aspectFill" src='/public/images/share-gift.png'></image> 
+       
+       </block>
+     2018年04月01日
+    </view>
+ </view>
+</template>
+<!--===================comment END====================-->
+
+
+
+
+

@@ -1,0 +1,11 @@
+<view class='outer-ct'>
+   <view bindtap='fShowModal'>二次营销人群</view>
+</view>
+
+<view class='fix-ct'  wx:if="{{isShowModel}}" bindtap='fHideModal'>
+</view>
+  <view class='sheet-ct sheet-items' style='bottom:{{-ibottom-40}}px' bindtap='fHideModal' animation="{{animationData}}">
+  <slot name="dsheet"></slot>
+  </view>
+
+

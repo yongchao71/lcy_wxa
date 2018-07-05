@@ -1,0 +1,19 @@
+
+<view class='w-10 b-s tab-outer'>
+  <view class='tpt-tab-box'style='position:{{isfixed?"fixed":""}}'>
+            <block wx:for='{{atabhead}}'  wx:for-item='oItem' wx:key='oItem.id' wx:for-index="index">
+              <view class="tpt-tab-item  {{icurrentselected==index?'d-tab-selected':''}}" style='width:{{100/atabhead.length}}%;'   data-oitem='{{oItem}}' data-iindex='{{index}}' bindtap='fChangeTab'>
+                  <view class="tpt-tab-txt"> {{oItem}}</view>
+              </view>
+            </block>
+    </view>
+  <view class='w-10 b-s {{isfixed?"i-ct":""}}'>
+    <block wx:for='{{atabhead}}'  wx:for-item='oItem' wx:key='oItem.id' wx:for-index="index">
+        <view class='w-10' wx:if="{{icurrentselected==index}}">
+          <slot name="{{index}}"></slot>     
+        </view>
+    </block>
+  </view>
+
+</view>
+

@@ -1,0 +1,31 @@
+{
+  "pages": [
+    "page/index/index",
+    "page/category/category",
+    "page/cooagency/cooagency",
+    "page/scrolltab/scrolltab",
+    "page/test/test",
+    "page/components/searchbox/searchbox"
+ 
+  ],
+  "subPackages": [
+    {
+      "root": "page/client",
+      "pages": [
+        "pages/sharecase/sharecase"
+      ]
+    },
+    {
+      "root": "page/customer",
+      "pages": [
+        "pages/case/case"
+      ]
+    }
+  ],
+  "window": {
+    "backgroundTextStyle": "light",
+    "navigationBarBackgroundColor": "#9083ed",
+    "navigationBarTitleText": "美氪云",
+    "navigationBarTextStyle": "#ffffff"
+  }
+}

@@ -1,0 +1,12 @@
+<view class="b-s phone-ct">
+  <view class="b-s i-ct">
+    <view class="i-b input-ct">
+      <text class="i-b">{{phoneTxt}}</text>
+      <input class="i-b p-input" type="number" bindinput="fBindInputPhone" value="{{phoneNumber}}" name="phoneNumber" placeholder="请输入手机号" />
+    </view>
+    <view class="i-b">
+      <view class="b-s sub-btn"  wx:if="{{!isDisabled}}" bindtap="fGetValidCode">获取验证码</view>
+      <view class="b-s sub-btn" wx:if="{{isDisabled}}" >{{iCount+'s'}}</view>
+    </view>
+  </view>
+</view>

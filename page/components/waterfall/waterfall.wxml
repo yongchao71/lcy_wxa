@@ -1,0 +1,11 @@
+    <view class="w-fall-ct">
+        <view class="waterfall">
+          <block url="url" wx:for="{{aList}}" wx:key="unique">
+           <view class="item">
+            <image src="{{item.url}}" mode="widthFix" bindload="loadImage" data-index="{{index}}"></image>
+                <view>1 {{item.des}}</view>
+           </view>
+
+          </block>
+        </view>
+    </view>

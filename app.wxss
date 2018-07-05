@@ -1,0 +1,324 @@
+page{
+  height: 100%;
+  background-color: #F7F7F7;
+  font-size: 28rpx;
+  color: #666666;
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family:'Helvetica Neue','Hiragino Sans GB',stheiti,'Microsoft Yahei','微软雅黑',tahoma,sans-serif;
+}
+::-webkit-scrollbar{
+  height: 0;
+  width: 0;
+}
+.container{
+  width: 100%;
+  box-sizing: border-box;
+} 
+/***********flex start****************/
+.flex{
+  display: flex;
+}
+.flex-c{
+   display: flex;
+   justify-content: center;
+   align-items: center;
+}
+.fx-d-row{
+  flex-direction: row;
+}
+.fx-d-col{
+  flex-direction: column;
+}
+.fx-jc-sa{
+  justify-content: space-around;
+}
+.fx-jc-sb{
+   justify-content:space-between;
+}
+.fx-jc-ed{
+  justify-content:flex-end;
+}
+.fx-wp{
+  flex-wrap:wrap;
+}
+/***********flex end****************/
+
+/***********font start***************/
+.f-22{ 
+  font-size: 22rpx;
+}
+.f-24{
+  font-size: 24rpx;
+}
+.f-28{
+  font-size: 28rpx;
+}
+.f-32{
+  font-size: 32rpx;
+}
+.c-3{
+  color: #333333;
+}
+.c-6{
+  color: #666666;
+}
+.c-9{
+  color: #999999;
+}
+.c-f{
+  color: #ffffff;
+}
+.bk-c-w{
+background-color: #ffffff;
+}
+/***********font end***************/
+.h-w-10{
+  width: 100%;
+  height: 100%;
+}
+.w-10{
+  width: 100%;
+}
+.w-6{
+  width: 60%;
+}
+.w-5{
+  width: 50%;
+}
+.w-4{
+  width: 40%;
+}
+
+.b-s{
+    box-sizing: border-box;
+}
+.hide{
+  display: none;
+}
+.i-b{
+  display: inline-block;
+}
+.b-r-5{
+  border-radius: 50%;
+}
+/************positon start*************************/
+.v-a-m{
+  vertical-align: middle;
+}
+.v-a-t{
+ vertical-align: top;
+}
+.b-d{
+  border: 1rpx solid #E8E8E8; 
+}
+.bd-b{
+  border-bottom: 1rpx solid #eeeeee;
+}
+.t-a-r{
+  text-align: right;
+}
+.t-a-l{
+  text-align: left;
+}
+.t-a-c{
+  text-align: center;
+}
+
+/************positon end*************************/
+.fl {
+    float: left;
+}
+.fr {
+    float: right;
+}
+/********项目标签 带边框*********/
+
+/***********padding margin start***************/
+.mg-auto{
+  margin: 0 auto;
+}
+.pd-mg-0{
+  padding: 0;
+  margin: 0;
+}
+.pd-2{
+  padding: 20rpx;
+}
+.pd-4{
+  padding: 40rpx;
+}
+.pd-t-4{
+  padding-top: 40rpx;
+}
+.pd-t-2{
+  padding-top: 20rpx;
+}
+.pd-b-4{
+  padding-bottom: 40rpx;
+}
+.pd-b-2{
+  padding-bottom: 20rpx;
+}
+.pd-l-4{
+  padding-left:40rpx;
+}
+.pd-l-2{
+  padding-left:20rpx;
+}
+.pd-r-4{
+  padding-right:40rpx;
+}
+.pd-r-2{
+  padding-right:20rpx;
+}
+.pd-h-2{
+  padding-left: 20rpx;
+  padding-right: 20rpx;
+}
+.pd-h-4{
+  padding-left: 40rpx;
+  padding-right: 40rpx;
+}
+.pd-v-2{
+  padding-top: 20rpx;
+  padding-bottom: 20rpx;
+}
+.pd-v-4{
+  padding-top: 40rpx;
+  padding-bottom: 40rpx;
+}
+
+
+.mg-2{
+  margin: 20rpx;
+}
+.mg-4{
+  margin: 40rpx;
+}
+.mg-t-2{
+  margin-top: 20rpx;
+}
+.mg-t-4{
+  margin-top: 40rpx;
+}
+.mg-r-2{
+  margin-right: 20rpx;
+}
+.mg-r-4{
+  margin-right: 40rpx;
+}
+.mg-b-2{
+  margin-bottom: 20rpx;
+}
+.mg-b-4{
+  margin-bottom: 40rpx;
+}
+.mg-l-2{
+  margin-left: 20rpx;
+}
+.mg-l-4{
+  margin-left: 40rpx;
+}
+
+.mg-v-2{
+  margin-top: 20rpx;
+  margin-bottom: 20rpx;
+}
+.mg-v-4{
+  margin-top: 40rpx;
+  margin-bottom: 40rpx;
+}
+.mg-h-2{
+  margin-left: 20rpx;
+  margin-right: 20rpx;
+}
+.mg-h-4{
+  margin-left: 40rpx;
+  margin-right: 40rpx;
+}
+
+
+
+/***********padding margin start***************/
+
+
+
+/***********common start***************/
+.cm-logo{
+  width: 120rpx;
+  height: 120rpx;
+}
+.yj-logo{
+  width: 35rpx;
+  height: 35rpx;
+  vertical-align: middle;
+}
+.cm-c{
+  color: #41AAA0;
+}
+
+.bk-r-img{
+  background-repeat: no-repeat;
+  background-size:100% 100%;
+}
+
+.cm-b-shadow{
+  box-shadow: 0 0 8rpx 6rpx #eeeeee;
+}
+.cm-seg{
+   background-color: #F7F7F7;
+   height:20rpx;
+}
+.back-top-ct{
+  bottom: 70rpx;
+  right: 0;
+  height: 80rpx;
+  position: fixed;
+  text-align: right;
+  padding-right: 30rpx;
+}
+.top-icon{
+  width: 80rpx;
+  height: 80rpx;
+}
+
+.icon-title{
+  width: 60rpx;
+  height: 60rpx;
+  border-radius: 50%;
+  margin: 20rpx 10rpx 20rpx 0;
+  vertical-align: middle;
+}
+
+.cm-btn{
+  display: inline-block;
+  padding: 15rpx 40rpx;
+  border: 1rpx solid #eeeeee;
+  background-color: #ffffff;
+  border-radius: 8rpx;
+  margin: 10rpx;
+
+}
+.cm-btm-btn{
+  margin: 0 auto;
+  width: 90%;
+  padding: 20rpx;
+  background: #41aaa0;
+  text-align: center;
+  color: #ffffff;
+  font-size: 32rpx;
+  box-sizing: border-box;
+  border-radius: 10rpx;
+}
+.cm-nowrap{
+  white-space:nowrap;
+  overflow: scroll;
+}
+.limit-f-l{
+  overflow: hidden;
+  text-overflow: ellipsis;
+  white-space: nowrap;
+}
+/*********common start**************/

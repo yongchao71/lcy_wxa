@@ -1,0 +1,10 @@
+ <view class='search-ct b-s'  style='{{boxStyle}}'>
+    <view class='i-ct b-s'>
+      <icon type='search ' wx:if="{{iconleft}}" bindtap='fSearchCommit' size="{{iconSize}}" class='b-s i-b s-icon' style='{{iconStyle}}'></icon>
+      <input wx:if="{{!isSearch}}" placeholder='{{placeholder}}' value="{{value}}" disabled='true' bindtap='fClickinput' class='b-s i-b search-input' style='{{inputStyle}}'></input>   
+ 
+ <input wx:if="{{isSearch}}" focus='{{isSearch}}' value="{{value}}" bindconfirm="fSearchCommit"  bindinput='fBindinput' class='b-s i-b search-input' style='{{inputStyle}}'></input> 
+      <icon type='search '  wx:if="{{!iconleft}}" bindtap='fSearchCommit' size="{{iconSize}}" class='b-s i-b s-icon' style='{{iconStyle}}'></icon>
+    </view>
+    <view wx:if="{{isSearch}}" bindtap='fCancelSearch' class='cancel-txt'>取消</view>
+  </view>

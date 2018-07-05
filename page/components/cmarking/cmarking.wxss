@@ -1,0 +1,21 @@
+.w-10{
+  width: 100%;
+}
+.b-s{
+  box-sizing: border-box;
+}
+.star-img{
+  width: 50rpx;
+  height: 50rpx;
+  border-radius: 50%;
+  margin-right: 5rpx;
+  vertical-align: middle;
+}
+.rank-ct{
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+.r-des{
+font-size: 28rpx;
+}

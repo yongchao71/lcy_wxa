@@ -1,0 +1,26 @@
+<view class='tpt-dp-fixed-ct1'  style="width:100%;">
+    <view class='tpt-dp-ct'  style="">
+      <view class='tpt-dp-top-ct'>
+        <scroll-view scroll-y  class='tpt-dp-left' style='width:200rpx;'>
+          <block wx:for="{{aProvinceData}}" wx:for-item="oItem" wx:for-index="index" wx:key="id">
+            <view class="tpt-dp-gp-name {{iCurrentSelect==oItem.id?'active':''}}" data-oitem="{{oItem}}"  bindtap="fChooseProvince">
+              {{oItem.name}}
+            </view>
+          </block>
+        </scroll-view>
+        <scroll-view scroll-y class='tpt-dp-right' style=''>
+          <block wx:for="{{aCurrentCityData}}" wx:for-item="oItem" wx:key="id">
+            <view class="tpt-dp-right-item " style="" data-oitem="{{oItem}}"  bindtap="fChooseCity">
+               <view class="tpt-dp-right-item-txt {{iCurrentCity==oItem.id?'selected-city':''}}">
+                  {{oItem.name}} 
+               </view>
+            </view>
+          </block>
+        </scroll-view>
+      </view>
+      <view class='tpt-dp-bottom-ct' style='display:none;'>
+         <view class='tpt-dp-btn' style='' catchtap="fResertSelect">重置</view>
+         <view class='tpt-dp-btn tpt-dp-btn-sure' bindtap="fConfirmSelect">确定</view>
+      </view>
+    </view>
+    </view>

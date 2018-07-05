@@ -1,0 +1,32 @@
+.agency-outer{
+border-top: 1rpx solid #eeeeee;
+ padding: 20rpx;
+}
+.clinic-img{
+  width: 160rpx;
+  height: 160rpx;
+  border-radius: 50%;
+}
+.c-item-ct{
+  width: 33.3%;
+  display: inline-block;
+  padding-top: 40rpx;
+  padding-bottom: 40rpx;
+
+}
+.img-outer{
+ padding: 10rpx;
+ border-radius: 50%;
+ overflow: hidden;
+ box-shadow: 0 0 8rpx 6rpx #eeeeee;
+}
+.clinic-name{
+  padding: 10rpx 0;
+  color: #999999;
+}
+
+
+
+
+
+/***********************************************/

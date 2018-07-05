@@ -1,0 +1,11 @@
+<!--================评分占比 start=========================-->
+      <view class='w-10 b-s program-ct'>
+           <view class='score-title'>
+              <slot name="iname"></slot>
+              <slot name="iscore"></slot>
+            </view>
+           <view class='tpt-score-slid-ct'>
+             <view class='score-slid-item score-style' style='width:{{iscore}}%;'></view>
+           </view>
+       </view>
+<!--================评分占比end=========================-->

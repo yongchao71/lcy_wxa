@@ -1,0 +1,10 @@
+.fly-ct{
+  display: inline-block;
+}
+.fly-ball{
+  width: 40rpx;
+  height: 40rpx;
+  background: #9083ed;
+  border-radius: 50%;
+  border: 1rpx solid rebeccapurple;
+}

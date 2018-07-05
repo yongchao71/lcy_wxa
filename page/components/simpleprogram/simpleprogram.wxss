@@ -1,0 +1,24 @@
+/**************评分占比 start********************/
+.w-10{
+  width: 100%;
+}
+.b-s{
+  box-sizing: border-box;
+}
+.score-title{
+  display: flex;
+  justify-content:space-between;
+  margin-bottom: 10rpx;
+}
+.tpt-score-slid-ct{
+  width: 100%;
+  height: 30rpx;
+  border: 1rpx solid #eeeeee;
+  border-radius: 20rpx;
+}
+.score-slid-item{
+  height: 100%;
+  border-radius: 20rpx;
+  background: #41aaa0;
+}
+/****************评分占比 end******************/

@@ -1,0 +1,13 @@
+<view class='w-10 b-s rank-ct'>
+   <view class='b-s' style=''>
+      <slot name="rname"></slot>
+      <block wx:for="{{aStar}}" wx:for-item="oItem" wx:for-index="index" wx:key="id">
+         <image  wx:if="{{index+1<=istarcount}}" data-iindex="{{index}}" bindtap="fChangeStar" class='star-img star-style' mode='aspectFit'  src='{{imgstar}}' ></image>
+         <image  wx:if="{{index+1>istarcount}}" data-iindex="{{index}}" bindtap="fChangeStar" class='star-img star-style' mode='aspectFit'  src='{{imgustar}}' ></image>
+      </block>
+      <slot name="stxt"></slot>
+   </view>
+   <view class='r-des' wx:if="{{isshowdes}}">
+     {{arankdes[istarcount-1]}}
+   </view>
+</view>

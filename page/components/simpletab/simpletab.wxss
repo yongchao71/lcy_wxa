@@ -1,0 +1,43 @@
+/****************切换tab模块 end**************/
+.w-10{
+  width: 100%;
+}
+.b-s{
+  box-sizing: border-box;
+}
+.tab-outer{
+
+}
+.tpt-tab-box{
+ width: 100%;
+ box-sizing: border-box;
+ background: #ffffff;
+ 
+}
+.tpt-tab-box .tpt-tab-item{
+  display: inline-block;
+  position: relative;
+  box-sizing: border-box;
+  text-align: center;
+  padding: 20rpx 0;
+  width: 33.3%;
+  border-bottom:1rpx solid #eeeeee; 
+}
+.d-tab-selected{
+  color: #9083ed;
+}
+.d-tab-selected::after{
+  content: " ";
+  position: absolute;
+  width: 40rpx;
+  height: 8rpx;
+  background: #9083ed;
+  bottom: 0;
+  left:50%;
+  margin-left: -20rpx;
+  border-radius: 4rpx;
+}
+.i-ct{
+  padding-top: 60rpx;
+}
+/****************切换tab模块 end**************/

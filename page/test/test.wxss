@@ -1,0 +1,28 @@
+
+.index-right{
+  position: fixed;
+  height: 100rpx;
+   right: 40rpx;
+   top: 350rpx;
+}
+.index-top{
+  position: fixed;
+  height: 100rpx;
+   right: 40rpx;
+   top: 150rpx;
+}
+
+.end-rubish{
+  position: fixed;
+  left: 20px;
+  top: 440px;
+
+}
+
+.ball{
+  width: 60rpx;
+  height: 60rpx;
+  background: #9083ed;
+  border-radius: 50%;
+  border: 1rpx solid rebeccapurple;
+}

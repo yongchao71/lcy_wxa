@@ -1,0 +1,3 @@
+<view class='container'>
+  <view bindtap='fNavToCustomer'>案例分享</view> 
+</view>

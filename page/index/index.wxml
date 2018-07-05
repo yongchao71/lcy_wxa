@@ -1,0 +1,16 @@
+<import src="/page/common/template/cmtemplate.wxml" />
+<import src="/page/common/template/listtemplate.wxml" />
+<wxs src="../common/wxs/cmtemplate.wxs" module="cmtemplate" />
+<view class="container">
+  <view style="padding:0rpx;box-sizing: border-box;">
+    <template is="taskmodule" data="{{...oModuleList}}" />
+  </view>
+
+  <view style='padding:0rpx;height:800rpx;background:#ffffff;'>
+    <view style='padding:20rpx 40rpx;'>代办任务 </view>
+    <template is="listmodule" data="{{...oListModule}}"></template>
+  </view>
+
+  <view style='width:100%;height:600px;' hidden='{{false}}' bindtap='fShowDetail'>
+  </view>
+</view>

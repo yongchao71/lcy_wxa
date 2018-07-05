@@ -1,0 +1,57 @@
+@import "/page/common/wxss/cmtemplate.wxss";
+@import "/page/common/wxss/listtemplate.wxss";
+.userinfo {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.userinfo-avatar {
+  width: 128rpx;
+  height: 128rpx;
+  margin: 20rpx;
+  border-radius: 50%;
+}
+
+.userinfo-nickname {
+  color: #aaa;
+}
+
+.usermotto {
+  margin-top: 200px;
+}
+
+.index-right{
+  position: fixed;
+  height: 100rpx;
+   right: 40rpx;
+   top: 350rpx;
+}
+
+.end-rubish{
+  position: fixed;
+  left: 20px;
+  top: 440px;
+
+}
+.ball{
+  width: 60rpx;
+  height: 60rpx;
+  background: #9083ed;
+  border-radius: 50%;
+  border: 1rpx solid rebeccapurple;
+}
+
+.star-style{
+  width: 60rpx;
+  height: 60rpx;
+}
+
+.itext{
+  display: inline-block;
+}
+
+
+.b-posotion{
+ bottom: -100rpx !important;
+}

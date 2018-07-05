@@ -1,0 +1,14 @@
+<view class='w-10 b-s f-14 bk-c-w agency-outer'>
+ <block wx:for="{{aAgency}}" wx:for-item="oItem" wx:for-index="index" wx:key="id">
+  <view class='b-s   c-item-ct'>
+      <view class='flex-c fx-d-col '>
+        <view class='flex-c b-s img-outer'>
+          <image class='clinic-img' mode="aspectFill" src="{{oItem.logo}}"></image>
+        </view>
+        <text class='clinic-name'>{{oItem.name}}</text>    
+      </view>
+    </view>
+ </block>
+ <view class='cm-btm-btn'>ggggg</view>
+</view>
+

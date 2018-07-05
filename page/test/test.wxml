@@ -1,0 +1,16 @@
+<view class='b-d index-right' style="width:100rpx;"  bindtap='fGetCurrentPosition'>
+       <image  class='cm-img' mode='aspectFit' style='width:100rpx;height:100rpx;position:absolute;'  src='/public/images/red-package.png' ></image>
+     </view>
+
+ <view class='b-d index-top' style="width:100rpx;"  bindtap='fGetCurrentPosition'>
+       <image  class='cm-img' mode='aspectFit' style='width:100rpx;height:100rpx;position:absolute;'  src='/public/images/red-package.png' ></image>
+     </view>
+
+<view class='end-rubish'>
+   今日统计
+</view>
+
+
+<view animation="{{animationY}}" style="position:fixed;top:{{ballY}}px;" hidden="{{!showBall}}">
+  <view class="ball" animation="{{animationX}}" style="position:fixed;left:{{ballX}}px;"></view>
+</view>

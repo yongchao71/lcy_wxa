@@ -1,0 +1,7 @@
+
+<view class='fly-ct' style='' bindtap='fGetCurrentPosition'>
+  <slot name="rname"></slot>
+</view>
+<view animation="{{animationY}}" style=" position:fixed;top:{{ballY}}px;" hidden="{{!isShowBall}}">
+  <view class="fly-ball" animation="{{animationX}}" style="position:fixed;left:{{ballX}}px;"></view>
+</view>

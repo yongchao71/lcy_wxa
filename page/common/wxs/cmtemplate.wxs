@@ -1,0 +1,31 @@
+var arrayFilter = function (oItems, item) {
+  oItems = oItems || [];
+  return oItems.indexOf(item) >= 0;
+}
+
+var inArray = function (arr, item) {
+  // console.log(typeof (arr), arr, "-------------------", item, arr.indexOf(item));
+  if (arr.indexOf(item) == -1) {
+    return false;
+  } else {
+    return true;
+  }
+}
+var isSelectCate = function (plist, pitems) {
+  pitems = pitems || [];
+  plist = plist || [];
+  var result = false;
+  plist.forEach(function (oItem, oIndex) {
+    oItem.productList.forEach(function (item, index) {
+      if (pitems.indexOf(item.productCode) >= 0) {
+        result = true;
+      }
+    });
+  });
+  return result;
+}
+module.exports = {
+  arrayFilter: arrayFilter,
+  inArray: inArray,
+  isSelectCate: isSelectCate
+}

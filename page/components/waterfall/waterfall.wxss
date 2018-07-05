@@ -1,0 +1,22 @@
+   .w-fall-ct{
+      width:100%;
+      box-sizing: border-box;
+      margin: 0 auto;
+      }
+    .waterfall{
+      -webkit-column-count:2; /* Safari 和 Chrome */
+      column-count:2;
+      -webkit-column-gap: 1rpx;
+      column-gap: 1rpx;
+    }
+    .item{
+      padding: 10rpx;
+      margin: 0 0 1rpx 0;
+      box-sizing: border-box;
+      -webkit-column-break-inside: avoid;
+      break-inside: avoid;
+    }
+    .item img{
+        width: 100%;
+        margin-bottom:10px;
+    }

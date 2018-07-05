@@ -1,0 +1,83 @@
+.tpt-dp-fixed-ct{
+ position: fixed;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  background: rgba(0, 0, 0, 0);
+
+}
+.tpt-dp-ct{
+  width: 100%;
+  box-sizing: border-box;
+  box-shadow: 0 0 10rpx #ddd;
+  background-color: #ffffff;
+}
+.tpt-dp-ct .tpt-dp-top-ct{
+  display: flex;
+
+}
+.tpt-dp-ct .tpt-dp-left{
+  flex: 0 0 200rpx;
+  box-sizing: border-box;
+  height: 447rpx;
+  overflow: scroll;
+  background-color: #f7f7f7;
+}
+.tpt-dp-ct .tpt-dp-gp-name{
+  text-align: center;
+  padding: 20rpx 0;
+  overflow: scroll; 
+  white-space:nowrap; 
+  font-size: 28rpx;
+ 
+  position: relative;
+}
+.tpt-dp-ct .tpt-dp-right{
+ height: 447rpx;
+ box-sizing: border-box;
+}
+.tpt-dp-ct .tpt-dp-right-item{
+ display: inline-block;
+ color: #ffffff;
+ padding: 8rpx 10rpx;
+}
+.tpt-dp-right-item-txt{
+   background: #eeeeee;
+   padding: 8rpx 20rpx;
+   border-radius: 30rpx;
+   color: #333333;
+}
+.selected-city{
+   background: #41aaa0;
+   color: #ffffff;
+}
+.tpt-dp-bottom-ct{
+  width: 100%;
+  background-color: #ffffff;
+  display: flex;
+  align-items: center;
+  justify-content:space-around;
+  height: 90rpx;
+  box-sizing: border-box;
+}
+
+.tpt-dp-btn{
+  flex: 0 0 50%;
+  height: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.tpt-dp-btn-sure{
+  background: #41aaa0;
+  color: #ffffff;
+  
+}
+
+.active{
+  background-color: #ffffff;
+  border-right:none;
+  border-left: 8rpx solid #41aaa0;
+  color: #41aaa0;
+}

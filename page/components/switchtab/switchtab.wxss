@@ -1,0 +1,44 @@
+		.wx-switch-outer{
+      width: 100%;
+      box-sizing: border-box;
+    }
+    .linktab-header {
+				height: 80rpx;
+				width: 100%;
+				box-sizing: border-box;
+				overflow: hidden;
+				line-height: 80rpx;
+				font-size: 32rpx;
+				white-space: nowrap;
+			}
+			
+			.tab-item {
+				margin: 0 20rpx;
+				display: inline-block;
+			}
+			
+			.tab-item.active {
+				color: #9083ed;
+				position: relative;
+			}
+			
+			.tab-item.active:after {
+				content: "";
+				display: block;
+				height: 8rpx;
+				width: 52rpx;
+				background: #9083ed;
+				position: absolute;
+				bottom: 0;
+				left: 50%;
+        margin-left: -26rpx;
+				border-radius: 16rpx;
+			}	
+			.tab-ct {
+        width: 100%;
+				margin-top: 20rpx;
+        box-sizing: border-box;
+			}
+			.scoll-h {
+				height: 100%;
+			}
